@@ -13,18 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Eduardo Melo — Portfolio de Aplicativos',
-  description: 'Dez ideias, um universo em movimento. Uma coleção viva de aplicativos autorais por Eduardo Melo.',
+  title: 'Eduardo Melo — App Portfolio',
+  description: 'Ten ideas, one universe in motion. A living collection of original apps by Eduardo Melo.',
   openGraph: {
-    title: 'Dez ideias. Um universo em movimento.',
-    description: 'Eduardo Melo — Portfólio de aplicativos autorais.',
+    title: 'Ten ideas. One universe in motion.',
+    description: 'Eduardo Melo — A portfolio of original apps.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1731, height: 909, alt: 'Dez ideias. Um universo em movimento.' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Ten ideas. One universe in motion.' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dez ideias. Um universo em movimento.',
-    description: 'Eduardo Melo — Portfólio de aplicativos autorais.',
+    title: 'Ten ideas. One universe in motion.',
+    description: 'Eduardo Melo — A portfolio of original apps.',
     images: ['/og.png'],
   },
 };
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
