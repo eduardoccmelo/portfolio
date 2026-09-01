@@ -28,10 +28,20 @@ body { background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, 
 .card-link { position:absolute; inset:0; z-index:4; }
 .card-meta { display:flex; justify-content:space-between; font-size:8px; font-weight:900; letter-spacing:.13em; }
 .project-icon { width:clamp(30px,3.5vw,52px); height:clamp(30px,3.5vw,52px); align-self:center; transition:transform .3s ease; }
+.project-logo { width:clamp(62px,8vw,118px); height:clamp(54px,7vh,92px); object-fit:contain; align-self:center; transition:transform .3s ease; }
+.logo-01 { width:clamp(78px,10vw,145px); }
+.placeholder-mark { align-self:center; font-size:clamp(30px,4vw,58px); line-height:1; font-weight:900; letter-spacing:-.08em; opacity:.12; }
 .project-card:hover .project-icon { transform:rotate(-8deg) scale(1.12); }
+.project-card:hover .project-logo { transform:scale(1.06); }
 .card-title { display:flex; align-items:end; justify-content:space-between; gap:5px; }
 .card-title strong { font-size:clamp(12px,1.35vw,20px); line-height:1; letter-spacing:-.045em; }
 .card-title svg { width:15px; height:15px; flex:none; }
+.card-overlay { position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; justify-content:flex-end; padding:clamp(12px,1.2vw,18px); color:#fff; background:rgb(10 10 10 / 88%); opacity:0; transform:translateY(8px); transition:opacity .25s ease, transform .25s ease; }
+.card-overlay>span,.card-overlay small { font-size:8px; font-weight:900; letter-spacing:.13em; text-transform:uppercase; }
+.card-overlay>span { position:absolute; top:clamp(12px,1.2vw,18px); left:clamp(12px,1.2vw,18px); }
+.card-overlay p { margin:0 0 12px; font-size:clamp(11px,1vw,14px); line-height:1.35; font-weight:700; letter-spacing:-.015em; }
+.card-overlay small { opacity:.6; }
+.project-card:hover .card-overlay,.project-card:focus-within .card-overlay { opacity:1; transform:translateY(0); }
 
 @media (max-width:800px) {
   .portfolio-screen { grid-template-rows:56px minmax(88px,18vh) minmax(0,1fr); gap:8px; padding-bottom:10px; }
@@ -44,7 +54,9 @@ body { background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, 
   .card-meta { align-self:stretch; flex-direction:column; font-size:7px; }
   .card-meta span:last-child { display:none; }
   .project-icon { width:28px; height:28px; }
+  .project-logo { width:48px; height:40px; }.logo-01 { width:62px; }.placeholder-mark { font-size:26px; }
   .card-title { width:58%; align-items:center; }.card-title strong { font-size:12px; }
+  .card-overlay { padding:9px 11px; }.card-overlay>span { top:9px; left:11px; }.card-overlay p { margin:0; font-size:10px; line-height:1.25; }.card-overlay small { display:none; }
 }
 
 @media (max-width:480px) {
