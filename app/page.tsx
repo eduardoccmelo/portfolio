@@ -4,7 +4,7 @@ import {
 } from 'lucide-react';
 
 const projects = [
-  { number: '01', name: 'PlayUp', logo: '/play-app.png', color: '#c7f0db', ink: '#063b2c', status: null, description: 'Manage pickup games, create player profiles and build balanced teams with less friction.', url: null },
+  { number: '01', name: 'PlayUp', logo: '/play-app.png', color: '#c7f0db', ink: '#063b2c', status: 'LIVE', description: 'Manage pickup games, create player profiles and build balanced teams with less friction.', url: 'https://play-up-two.vercel.app/' },
   { number: '02', name: 'Atlas', logo: '/atlas.png', color: '#dff7f8', ink: '#063b46', status: null, description: 'Keep flights, stays and essential trip details organized in one calm travel companion.', url: null },
   { number: '03', name: 'Little Bytes', icon: Blocks, color: '#ff8ec7', ink: '#280819', status: 'IN PROGRESS', description: 'Project details and visual identity are currently being developed.', url: null },
   { number: '04', name: 'In Progress', color: '#61d6ff', ink: '#061d26', status: 'IN PROGRESS', description: null, url: null },
