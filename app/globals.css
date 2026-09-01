@@ -23,7 +23,7 @@ body { background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, 
 .intro-copy span { font-size:9px; font-weight:900; letter-spacing:.14em; }
 
 .project-grid { min-height:0; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:clamp(6px,.8vw,12px); }
-.project-card { min-width:0; min-height:0; position:relative; overflow:hidden; padding:clamp(10px,1.1vw,17px); background:var(--card-color); color:var(--card-ink); display:flex; flex-direction:column; justify-content:space-between; transition:transform .25s ease, filter .25s ease; }
+.project-card { min-width:0; min-height:0; position:relative; overflow:hidden; padding:clamp(10px,1.1vw,17px); background:var(--card-color); color:var(--card-ink); display:flex; flex-direction:column; justify-content:space-between; cursor:url('/project-cursor.svg') 16 16, pointer; transition:transform .25s ease, filter .25s ease; }
 .project-card:hover { transform:translateY(-4px); filter:saturate(1.08); z-index:2; }
 .card-link { position:absolute; inset:0; z-index:4; }
 .card-meta { display:flex; justify-content:space-between; font-size:8px; font-weight:900; letter-spacing:.13em; }
