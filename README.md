@@ -15,8 +15,8 @@ npm run dev
 npm run build
 ```
 
-The project is currently configured for OpenAI Sites using Vinext and Cloudflare-compatible output. It can be stored on GitHub as-is. Deploying it to another platform may require adapting the build configuration for that platform.
+This is a standard Vite + React project configured for Vercel. Import the GitHub repository into Vercel and every push to `main` will publish automatically.
 
 ## Project links
 
-Portfolio entries are defined in `app/page.tsx`. Add the live URL to a project's `url` field and set its status to `LIVE` when it is ready.
+Portfolio entries are defined in `src/App.tsx`. Add the live URL to a project's `url` field and set its status to `LIVE` when it is ready.
