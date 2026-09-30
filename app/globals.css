@@ -22,8 +22,9 @@ body { background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, 
 .intro-copy p { max-width:320px; margin:0 0 16px; font-size:clamp(12px,1.2vw,16px); line-height:1.45; }
 .intro-copy span { font-size:9px; font-weight:900; letter-spacing:.14em; }
 
-.project-grid { min-height:0; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:clamp(6px,.8vw,12px); }
-.project-card { min-width:0; min-height:0; position:relative; overflow:hidden; padding:clamp(10px,1.1vw,17px); background:var(--card-color); color:var(--card-ink); display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; transition:transform .25s ease, filter .25s ease; }
+.project-grid { min-height:0; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); grid-template-rows:minmax(0,1fr); gap:clamp(6px,.8vw,12px); }
+.project-card { min-width:0; min-height:0; position:relative; overflow:hidden; padding:clamp(10px,1.1vw,17px); background:var(--card-color); color:var(--card-ink); display:flex; flex-direction:column; justify-content:space-between; transition:transform .25s ease, filter .25s ease; }
+.project-card.is-clickable { cursor:pointer; }
 .project-card:hover { transform:translateY(-4px); filter:saturate(1.08); z-index:2; }
 .card-link { position:absolute; inset:0; z-index:4; }
 .card-meta { display:flex; justify-content:space-between; font-size:8px; font-weight:900; letter-spacing:.13em; }
@@ -49,7 +50,8 @@ body { background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, 
   .intro { grid-template-columns:1fr auto; gap:16px; padding:8px 0; }
   .intro h1 { font-size:clamp(38px,11vw,70px); }
   .intro-copy { width:min(32vw,180px); }.intro-copy p { font-size:10px; margin-bottom:8px; }.intro-copy span { font-size:7px; }
-  .project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); gap:5px; }
+  .project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(3,minmax(0,1fr)); gap:5px; }
+  .project-card:last-child { grid-column:1 / -1; }
   .project-card { padding:8px 10px; flex-direction:row; align-items:center; }
   .card-meta { align-self:stretch; flex-direction:column; font-size:7px; }
   .card-meta span:last-child { display:none; }
