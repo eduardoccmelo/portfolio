@@ -20,3 +20,4 @@ This is a standard Vite + React project configured for Vercel. Import the GitHub
 ## Project links
 
 Portfolio entries are defined in `src/App.tsx`. Add the live URL to a project's `url` field and set its status to `LIVE` when it is ready.
+# portfolio
