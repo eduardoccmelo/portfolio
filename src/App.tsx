@@ -15,7 +15,7 @@ type Project = {
 
 const projects: Project[] = [
   { number: '01', name: 'Atlas', logo: '/atlas.png', color: '#dff7f8', ink: '#063b46', status: 'LIVE', description: 'Organize flights, stays and essential travel details in one calm travel companion.', url: 'https://atlas-sooty-tau.vercel.app/' },
-  { number: '02', name: 'PlayUp', logo: '/play-app.png', color: '#c7f0db', ink: '#063b2c', status: 'LIVE', description: 'Organize pickup football games, manage players and build balanced teams with less friction.', url: 'https://play-up-two.vercel.app/' },
+  { number: '02', name: 'PlayMate', logo: '/playmate-logo.png', color: '#c7f0db', ink: '#063b2c', status: 'LIVE', description: 'Organize group sports games, manage players and build balanced teams with less friction.', url: 'https://play-up-two.vercel.app/' },
   { number: '03', name: 'TODO App', icon: CheckSquare2, color: '#ffd84d', ink: '#251c00', status: 'LIVE', description: 'A simple, focused task manager for capturing, organizing and completing everyday to-dos.', url: 'https://todoapp-react.vercel.app/' },
   { number: '04', name: 'BumpTime', icon: Clock3, color: '#ff8ec7', ink: '#280819', status: 'LIVE', description: 'A one-tap contraction timer that tracks duration and frequency, revealing the labor pattern at a glance.', url: 'https://bump-time.vercel.app/' },
   { number: '05', name: 'Next Project', icon: Sparkles, color: '#90a7ff', ink: '#071130', status: 'IN PROGRESS', description: 'A new product is currently taking shape.', url: null },
